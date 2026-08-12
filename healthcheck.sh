@@ -2,7 +2,7 @@
 
 show_title() {
     echo "=============================="
-    echo "   Linux System Health Check"
+    echo "   Linux System Health Check v1"
     echo "=============================="
 }
 
