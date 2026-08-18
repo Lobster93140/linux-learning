@@ -39,6 +39,12 @@ echo
 echo "IP adress is:"
 ip addr | grep inet | grep -v inet6 | grep -v 127.0.0.1 | awk '{print $2}' | cut -d/ -f1
 }
+show_cpu() {
+    echo
+    echo "CPU information:"
+    lscpu | grep -E "Processeur|Nom de modèle"
+}
+
 
 show_title
 show_user
@@ -47,6 +53,8 @@ show_disk
 show_uptime
 show_memory
 show_ip
+show_cpu
 
 echo
 echo "Health check completed successfully."
+
