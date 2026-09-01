@@ -30,7 +30,7 @@ uptime
 }
 show_memory () {
 echo
-echo "Memory usage: "
+echo "Memory usage(RAM):  "
 free -h
 }
 
