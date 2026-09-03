@@ -12,6 +12,10 @@ user=$(whoami)
 echo "Current user: $user"
 }
 
+show_hostname() {
+echo "Hostname: $(hostname)"
+}
+
 show_date() {
 date=$(date)
 echo "Current date: $date"
@@ -48,6 +52,7 @@ show_cpu() {
 
 show_title
 show_user
+show_hostname
 show_date
 show_disk
 show_uptime
