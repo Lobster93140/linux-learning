@@ -13,7 +13,7 @@ echo "Current user: $user"
 }
 
 show_hostname() {
-echo "Hostname: $(hostname)"
+    echo "Hostname: $(hostname)"
 }
 
 show_date() {
